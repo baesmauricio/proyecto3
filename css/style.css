@@ -1,0 +1,497 @@
+
+/* :root{
+    font-size: 16px;
+    }    /* tamano de la fuente RAIZ ROOTrem es medida relativa. 16px=1rem
+        0.5rem=8px. entonces h1=2rem luego p=1rem y asi*/
+        
+@import url(./variables.css);/* sin :root */
+
+/* para dar estilo inicial a la pagina */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar{
+    background-color: #131346;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0px 0px 0px 0px;
+    position: relative;
+    
+}
+
+.navbar .logo {
+    height: 300px;
+    width: 350px ;
+    align-items: center;
+    margin-left: 50px;
+    margin-top: 15px; 
+}
+
+.navbar .logo img{
+    border:5px solid var(--primary-color700);
+    border-radius: 20%;
+    width: 100%;
+    height: 100%;
+    
+}
+.navbar .navbar-list{
+    display: flex; 
+    gap: 50px;
+    list-style: none;
+}
+
+.navbar .navbar-list a{
+    color: white;
+    text-decoration: none;
+    font-size: 2.5rem;
+    font-weight: bold;
+    align-items: center;
+    padding: 0px 60px 0px 30px;
+    transition: 0.3 ease;/* lo coloco en hover o aca??????? */
+    /* border:5px solid var(--primary-color700);
+    border-radius: 20%; */
+}
+
+.navbar .navbar-list a:hover{
+    transform: scale(1.1);
+    color: #6161eb;
+}
+.hero{
+    height: 100vh; /* o 100vh */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 100px;
+    background-image: linear-gradient(#00000099, #00000099), url(../img/trekking.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container{
+    width: 80%;
+    height: 50%;
+}
+.container h1{
+    font-style: normal;
+    font-size: 5rem;
+    font-weight: bold;
+    color:whitesmoke;
+    text-align: start;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem; 
+}
+
+.container p{
+    font-style: normal;
+    font-size: 3rem;
+    text-transform: none;
+    text-align: start;
+    line-height: 3rem; 
+    color:whitesmoke;
+    margin-top: 40px;
+}
+.mail{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 40px 0px 0px ;
+}
+
+form {
+    /* background: #007bff; */ /* Fondo blanco */
+    padding: 20px 40px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px #1c318e1a; 
+    display: flex;
+    flex-direction: row;
+    gap: 15px; 
+    max-width: 700px; 
+    width: 100%; 
+}
+
+label {
+    font-size: 2rem;
+    color: white; 
+}
+
+input[type="email"] {
+    padding: 15px; 
+    font-size: 1.4rem; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    width: 100%;
+    box-sizing: border-box; 
+}
+
+button[type="submit"] {
+    padding: 10px 20px; 
+    font-size: 1.4rem; 
+    color: #fff; 
+    background-color: #007bff; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.who {
+    height: 1200px;
+    background-color: #c3c7d2;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: #0056b3 solid;
+    border-top:  #0056b3 solid;
+}
+
+.who img{
+    height: 50%;
+    width: 20%;
+    border-radius: 10%;
+    border-left: 60px;
+    padding: 10px 0px 0px 10px;
+    margin-left: 50px;
+    border: #84a6ca solid;
+
+}
+.who .who-content{
+    padding: 10px;
+    width: 40%;
+}
+
+.who .who-content h2{
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-align: left;
+    color:var(--primary-color700);
+    letter-spacing: 0.2rem;
+    margin-left: 20px;
+}
+
+.who-content p{
+    font-style: normal;
+    font-size:2.5rem;
+    text-transform: none;
+    text-align: justify;
+    line-height: 3rem; 
+    color:var(--primary-color700);
+    margin-top: 20px;
+    padding: 20px;
+}
+.who-content p span{
+    font-weight: bold;
+    color: green;
+    font-size:2.5rem
+}
+
+.card-img{
+    height: 2500px;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.card-title{
+    font-size: 5rem;
+    text-align: center;
+    margin-top: 1rem;
+    color:var(--primary-color700);
+    font-weight: bold;
+}
+
+
+
+#producto{
+    height: 2000px;
+    background-color: #c3c7d2;
+    border-bottom: #0056b3 solid;
+}
+.row{    /* modifica el row de propuesta y de footer */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+
+.card{
+    height: auto;
+    width: 60rem;
+    padding: 20px;
+    background-color:#c3c7d2 ;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    border: #84a6ca solid;
+    
+}
+
+.card-img-top{ /* para regular la altura de la imagen */
+    height: 60rem;
+    
+}
+
+.card-body{ /* para modificar el cuerpo del texto */
+    background-color: #dce2e9;
+    height: 45rem;
+}
+
+.card-title{
+    text-align: left;
+}
+
+
+.card-text { /* para modificar el texto */
+    font-size: 3rem;
+    text-align: justify;
+    margin-top: 1.5rem;
+    color: var(--primary-color700);
+}
+.card-text span{
+    font-weight: bold;
+    color: green;
+    font-size: 3rem;
+}
+#destino{
+    height: 125rem;
+    background-color: #c3c7d2;
+    border-bottom: #0056b3 solid;
+}
+.title{
+    font: size 20rem;;
+    font-weight: bold;
+    text-align:center;
+}
+
+a.btn {
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+a.btn:hover {
+    background-color: #2980b9;
+    color: #470ff1;
+}
+
+
+
+.footer{
+    background-color: #f5f5f5;
+    padding: 30px;
+    height: 25rem;
+    width: 100%;
+}
+
+.footer-col ul{
+    list-style: none;
+    
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    position: relative;
+    background-color: pink;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: blue; 
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px ;
+}
+.footer-col ul li:not(:last-child){
+    margin: botton 10px;
+}
+.footer-col ul li a{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    color: var(--primary-color700);
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+    color: green;
+    padding-left: 10px;
+}
+.footer-col .social-network a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: grey;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: white;
+    transition: all 0.5s ease;
+}
+.footer-col .social-network a:hover{
+    color: green;
+    background-color: rgb(164, 131, 131);
+    padding-left: 10px;
+}
+
+@media(max-width: 767px){
+    .footer-col{
+        width: 25%;
+        padding: 0 15px;
+        margin-bottom: 30px;
+    }
+}
+@media(max-width: 574px){
+    .who img{
+        height: 300px;
+    }
+    .row{
+        columns: 2;
+    }
+    #destino{
+        height: auto;
+    }
+    .footer{
+        display: flex;
+        height: auto;
+        columns: 1;
+    }
+}
+
+/* .bike{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-shadow: 2px 2px 4px black;    
+    padding: 5px 5%;
+} */    
+
+/*  */
+
+/* class="landing-page">
+            <h1>Muchas cosas pasan sobre las nubes</h1>
+            <p> Cuando llegas a la cima, Muchas cosas pasan en tu cuerpo y en tu cerebro</p>
+ */            
+/* .main .landing-page::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #0000001a; 
+    z-index: 1;
+}
+
+.main .landing-page > * {
+    position: relative;
+    z-index: 2;
+} */
+/* .cards{
+    display: flex;
+    
+}
+
+.card{
+    display: flex;
+    flex: 50%;
+    margin:10px;
+    border: 5px solid black;
+    flex-direction: column;
+}
+.card .content{
+    flex-grow: 1;
+    flex-shrink: 1;
+
+} */ 
+
+/* .landing-page{
+    position: relative;
+    background:url("../img/fondo.jpeg") no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-shadow: 2px 2px 4px black;
+}
+.landing-page h1{
+    position: fixed;
+    transform: translateX(-50%);
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    color:#1d1d6c;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    top: 40%; 
+    left: 50%;
+    width: 90%;
+    
+}
+
+.landing-page p{
+    position: fixed;
+    font-size: 1,5rem;
+    font-weight: bold;
+    text-align: center;
+    color:#1d1d6c;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    width: 100%;
+    bottom: 35%;
+    
+}
+ */
+/*  <button class="btn">Contacto</button>
+.header .btn{
+    background-color: white;
+    border:none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color700);
+    transition: 0.3 ease-in-out;
+    padding: 5px;
+    border:5px solid var(--primary-color700);
+    border-radius: 15%;
+    text-align: right;
+
+}
+.header .btn:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+} */

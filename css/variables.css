@@ -1,0 +1,88 @@
+:root{
+--background-color:#9AA0B3;
+--primary-color500 :#33F5FF; /* como crear variables de color en css y despues se llama cuando lo usas */
+--primary-color700:#1995B7;
+--success-color500: #75B522;
+--success-color700: #478211;
+--info-color500:#7A89FF;
+--warning-color500:#FFE100;
+--danger-color500:#FF4759; 
+--border-color:black;
+
+
+}
+
+/* /*
+header {
+    background-color:var(--primary-color500); /* #e8c5b7: combinaciones del 0 al 16 pasando por el nueve y llegando a la f.*/
+/*   width: 90%;
+    height: 400px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border-radius: 50px;
+    padding: 100px; */
+    /* margin
+    border
+    padding
+    contenido 
+    
+} */
+/* #selector-id{
+    background-color: var(--info-color500);
+    width: 800px;
+    height: 500px;
+    border-radius: 50%;
+
+}
+ */
+/* h1{
+    background-color:white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color:var(--primary-color700);
+    text-transform: uppercase;
+    letter-spacing: 0.1rem; 
+    margin-top: 10%;
+} */
+
+/* p{
+    font-style: normal;
+    font-size: 1.5rem;
+    font-weight:100 ;
+    text-transform: none;
+    text-align: center;
+    text-decoration: underline #000000 wavy;
+    line-height: 2rem; 
+    color:var(--primary-color700);
+} */
+
+/* .selector-clase{
+    background-color:var(--primary-color700);
+    border-radius: 30px;
+    width: 800px;
+    height: 500px;
+    margin-bottom: 2rem;
+    margin-top: 10rem;
+} */
+
+/* dar estilo a la tarjeta card */
+/* .card{
+    background-color: var(--info-color500);
+    width: 20rem;
+    height: 30rem;
+    border: 20px;
+    box-shadow: 0px 0px 15px var(--border-color);
+    padding: 1rem;
+}
+ */
+
+/* .card__img{
+    width: 20rem;
+    height: 30rem;
+}
+.card__img img {
+    width: 100%;
+    height:100%;
+} */
+
